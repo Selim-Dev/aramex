@@ -1,0 +1,339 @@
+html {
+    font-size: 16px;
+}
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+    font-family: "Open Sans",Arial,Helvetica,sans-serif;
+    font-size: 100%;
+    line-height: 1.8;
+    color: #808284;
+    background-color: #eef1f5;
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 97%;
+    }
+}
+a {
+    color: #0f0f0f;
+}
+a {
+    cursor: pointer;
+}
+a {
+    cursor: pointer;
+}
+a {
+    outline: 0;
+}
+
+
+@media (min-width: 1025px){
+
+    body {
+        font-size: 100%;
+    }
+}
+@media (min-width: 668px){
+
+    body {
+        font-size: 100%;
+    }
+}
+@media (min-width: 1025px){
+
+    body {
+        font-size: 100%;
+    }
+}
+
+@media (min-width: 668px){
+
+    body {
+        font-size: 100%;
+    }
+}
+
+*, :after, :before {
+    box-sizing: border-box;
+}
+/* 
+@media (min-width: 1025px){
+
+    .amx-sn-main {
+        height: 112px;
+    }
+}
+@media (min-width: 668px){
+
+    .amx-sn-main {
+        height: 75px;
+    }
+}
+.amx-sn-main {
+    height: 60px;
+    transition: all .3s linear;
+} */
+/*  first Navbar ************************************** */
+
+#amx-sn-header1 .navbar-light .navbar-brand, nav a, ul li a{
+    color: #fdfdfd !important;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+@media (min-width: 1025px){
+
+    #amx-sn-header1{
+        height: 40px !important;
+    }
+}
+#amx-sn-header1 .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #146ac0 ;
+    text-align: left;
+    list-style: none;
+    background-color: #eef1f5;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+#amx-sn-header1 .dropdown-item{
+    color: #666666 !important;
+}
+@media (max-width: 500px) {
+    #amx-sn-header1 .dropdown-menu{
+        max-height:200px;
+        overflow-y:auto;
+    }
+}
+@media (min-width: 1024px) {
+    #amx-sn-header1 .dropdown-menu{
+        max-height:300px !important;
+        width: 380px !important;
+        overflow-y:auto;
+    }
+}
+
+
+/*  SEcond Navbar ************************************** */
+
+#amx-sn-header2 nav a, ul li a{
+    color: #FFF !important;
+}
+
+@media (min-width: 1025px){
+
+    #amx-sn-header2{
+        height: 75px !important;
+    }
+}
+#amx-sn-header2 .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #146ac0 ;
+    text-align: left;
+    list-style: none;
+    background-color: #eef1f5;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+}
+#amx-sn-header2 .dropdown-item{
+    color: #666666 !important;
+}
+@media (max-width: 500px) {
+    #amx-sn-header2 .dropdown-menu{
+        max-height:200px;
+        overflow-y:auto;
+    }
+}
+@media (min-width: 1024px) {
+    #amx-sn-header2 .dropdown-menu{
+        max-height:300px !important;
+        width: 380px !important;
+        overflow-y:auto;
+    }
+}
+.bg-red {
+    background-color: #dc291e!important;
+}
+.btn-red {
+    background-color: #dc291e!important;
+}
+
+#amx-sn-header2 .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+
+/*  hero  part ************************************** */
+
+body, html {
+    height: 100%;
+}
+
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.webdesignerdepot.com/cdn-origin/uploads/2017/02/featured_ux_context.jpg");
+
+/* Set a specific height */
+height: 60%;
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+font-size: 12px;
+}
+.hero-text2 {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 12px;
+    }
+.tracking--wrapper {
+    position: relative;
+    width: 100%;
+    min-height: 80px !important;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    overflow: hidden;
+}
+@media (min-width: 1024px) {
+    .tracking--wrapper {
+        min-width: 400px;
+    }
+}
+
+/*  second part */
+/* .content--header {
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+    position: relative;
+} */
+.content--header .panel-bar {
+    background-color: #dc291e;
+}
+.content--header .panel-bar {
+    display: block;
+    width: 40px;
+    height: 6px;
+    background-color: #dc291e;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.content--header h2{
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+.content--header h2 em{
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
+    color:  #dc291e;
+    font-style: normal;
+    font-size: 1.3em;
+    line-height: 1.3;
+}
+.content--header .subheader {
+    line-height: 1.4;
+    color: #808284;
+    text-transform: none;
+    font-size: .9em;
+}
+.content--header .subheader {
+    margin: 0 0 10px;
+}
+/* content image */
+@media (min-width: 668px){
+
+     .content--image, .amx-md-panel .content--media {
+        padding: 0;
+    }
+}
+.amx-cp-finder-map {
+    position: relative;
+}
+.content--image img, .amx-md-panel .content--media img {
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+@media (min-width: 1025px){
+
+    .amx-home-map-img {
+        min-height: 230px;
+    }
+    .amx-home-map-img {
+        height: auto;
+    }
+}
+.amx-cp-finder-map .office-counter {
+    background-color: #fff;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: 50%;
+    margin-left: -60px;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 14px;
+    padding: 1.8em 0;
+    border-radius: 50%;
+    border: 5px solid transparent;
+}
+.amx-cp-finder-map .office-counter .office-count {
+    display: block;
+    font-size: 1.5em;
+    line-height: 1;
+    font-weight: 700;
+    color: #dc291e;
+}
