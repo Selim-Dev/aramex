@@ -6,6 +6,7 @@
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/fontawesome-free-5.14.0-web/css/all.min.css">
     <title>aramex</title>
 </head>
 <body>
@@ -17,6 +18,7 @@
         </header>
     </div> -->
     <nav id="amx-sn-header1" class="navbar navbar-expand-lg navbar-light bg-dark ">
+        
         <a class="navbar-brand" href="#">Aramex Corporate</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -279,10 +281,16 @@
             </li>
             
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <form action="/home/GetSearchResult/" method="post" class="ng-pristine ng-valid">                       
+                <!-- <input id="search" class="foter-search" name="txtSearch" type="search" placeholder="Search"> -->
+                <i type="submit" class="fas fa-search text-white"></i>
+                <!-- <button type="reset" class="amx-i-cross  amx-cp-btn amx-cp-btn-clear" style="display: none;"></button> -->
+            </form> 
+
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -351,9 +359,9 @@
 
             
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-light btn-lg mx-2 my-2 my-sm-0" type="submit">Login</button>
-            </form>
+            <!-- <form class="form-inline my-2 my-lg-0"> -->
+                <a class="btn btn-outline-light btn-lg mx-2 my-2 my-sm-0" href="/login.html" >Login</a>
+            <!-- </form> -->
         </div>
     </nav>
 
@@ -368,7 +376,7 @@
             <p>Separate multiple tracking numbers with a space or comma. <a style="color: red;" href="#">Advanced Tracking</a></p>
         </div>
         <div class="hero-text2 col-md-2 ">
-            <h4>Discover new ways to take your business further</h4>
+            <h4 style="color:white !important">Discover new ways to take your business further</h4>
             <a href="#">
                 <div class="btn-group dropright">
                     <button type="button" class="btn btn-red text-white dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -383,51 +391,391 @@
 <br>
 
     <!-- second part -->
+    <div class="container box-border">
+        <div class="row  text-center ">
+            <div class="col-md-4" >
+                <div class="bg-white  content--header content--wrapper">
+                    <span class="panel-bar"></span>
+                    <h2 >
+                        "Find Aramex In"
+                        <em>Egypt </em>
+                    </h2>
+                    <div class="content--image">
+                        <div class="amx-cp-finder-map">
+                            <img class="amx-home-map-img" src="https://image.maps.api.here.com/mia/1.6/mapview?app_id=iVVl3R25pslIVHVBb9k6&amp;app_code=3QwQd_KcgiwQAjcrC3N_NQ&amp;lat=30.121901&amp;lon=31.405600&amp;z=8&amp;scale=false&amp;w=600&amp;h=300&amp;style=alps&amp;nocp" alt="">
+                            <a href="/support/find-office">
+                                <span class="img-overlay office-counter">
+                                    <span class="office-count">91 </span>
+                                    Locations
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <button class="btn btn-red text-white btn-lg">Find Neearest Location</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-white content--header content--wrapper">
+
+                    <span class="panel-bar"></span>
+                    <h2 >Get A Quick Shipping Rate </h2>
+                    <p class="subheader"> Competitive shipping rates designed for your needs</p>
+                    <div class="container">
+
+                        <form>
+                            <div class="form-group">
+                            <label for="exampleInputEmail1" class="float-left">From</label>
+                            <input type="text" class="form-control"   placeholder="Start typing your country">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1" class="float-left">To</label>
+                                <input type="text" class="form-control"   placeholder="Start typing your country">
+                            </div>
+                            <div class="form-group">
+                                <div class="row justify-content-around">
+                                    <div class="col-md-6">weight</div>
+                                    <div class="col-md-6">unit</div>
+                                </div>
+                                <div class="row justify-content-around">
+                                    
+        
+                                    <div class="col-md-6"><input type="text" class="form-control"  placeholder="0.5"></div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <select class="form-control" id="sel1">
+                                            <option>Kg</option>
+                                            <option>lb</option>
+        
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-red text-white btn-lg">Check Rates</button>
+
+        
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                    <div class="bg-white content--header content--wrapper ">
+
+                        <span class="panel-bar"></span>
+                        <h2 >Manage Shipments</h2>
+                        <p class="subheader"> Competitive shipping rates designed for your needs</p>
+                        
+                        <div class="list-group">
+                            <a href="#" class="list-group-item">
+                                <i class="fas fa-pen float-left"></i>Prepare Shipment
+                                <i class="fas fa-long-arrow-alt-right d-inline float-right "></i>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="far fa-clock d-inline float-left"></i>Prepare Shipment
+                                <i class="fas fa-long-arrow-alt-right d-inline float-right "></i>
+                            </a>
+                            <a href="#" class="list-group-item">
+                                <i class="far fa-calendar-check d-inline float-left"></i>Prepare Shipment
+                                <i class="fas fa-long-arrow-alt-right d-inline float-right "></i>
+                            </a>
+                        </div>
+                        <button type="submit" class="btn btn-red text-white btn-lg ">Sign UP</button>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- the articles part -------------------------------------------------------->
     <div class="container">
-        <div class="row content--header text-center ">
-          <div class="col-md-4">
-            <div class="bg-white">
-                <span class="panel-bar"></span>
-                <h2 >
-                    "Find Aramex In"
-                    <em>Egypt </em>
-                </h2>
-                <div class="content--image">
-                    <div class="amx-cp-finder-map">
-                        <img class="amx-home-map-img" src="https://image.maps.api.here.com/mia/1.6/mapview?app_id=iVVl3R25pslIVHVBb9k6&amp;app_code=3QwQd_KcgiwQAjcrC3N_NQ&amp;lat=30.121901&amp;lon=31.405600&amp;z=8&amp;scale=false&amp;w=600&amp;h=300&amp;style=alps&amp;nocp" alt="">
-                        <a href="/eg/en/support/find-office">
-                            <span class="img-overlay office-counter">
-                                <span class="office-count">91 </span>
-                                Locations
-                            </span>
+        <div class="row text-center ">
+            <div class="col-md-6 top-buffer equal">
+                <div class="article--wrapper">
+                    <div class="bg-white card">
+                        <img src="https://dotcomaramexprod.blob.core.windows.net/default/images/default-source/press-releases/aramex-revenues-increases-4--to-aed-1-332-million-in-q2-2020ff617c88b3f2659d9310ff0100e7fe0c.png" class="img-fluid">
+                        <div class="content--header top-buffer">
+                            <span class="panel-bar"></span>
+                            <div class="panel-title">News</div>
+                            <h2 class="header">
+                                Aramex Revenues Increases 4% to AED 1,332 million in Q2 2020
+                            </h2>
+                        </div>
+                        <div class="desc"  data-lines="3" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;padding-bottom: 5px;">
+                            
+    
+                            Q2 2020 Net Profit fell 23% to AED 94.4 million
+                            First Half 2020 Revenues rose 1% to AED 2,528 million
+                            First Half 2020 Net Profit declined 30% to AED 162 million
+                            Domestic Express e-commerce volumes in core markets rose 133% in Q2
+                        </div>
+                       
+                        <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                            <span class="text">Learn More</span>
                         </a>
                     </div>
                 </div>
-                <div class="btn btn-red text-white btn-lg my-3">Find Neearest Location</div>
+
             </div>
-          </div>
-          <div class="col-md-4">
-              <div class="bg-white">
+            <div class="col-md-6 top-buffer equal">
+                <div class="article--wrapper">
 
-                  <span class="panel-bar"></span>
-                  <h2 >Get A Quick Shipping Rate </h2>
-                  <p class="subheader"> Competitive shipping rates designed for your needs</p>
-              </div>
-          </div>
-          <div class="col-md-4">
-              <div class="bg-white">
+                    <div class="bg-white ">
+    
+                        <img src="https://dotcomaramexprod.blob.core.windows.net/default/images/default-source/press-releases/aramex-smart-launch-postbbd17b88b3f2659d9310ff0100e7fe0c.png" class="img-fluid">
+                        <div class="content--header top-buffer">
+                            <span class="panel-bar"></span>
+                            <div class="panel-title">News</div>
+                            <h2 class="header">
+                                Aramex Launches “Aramex SMART- Unbox First. Pay After.” to Boost E-commerce Growth Across its Core Markets
+                        </div>
+                        <div class="desc"  data-lines="3" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;">
+                            
+                            “Aramex SMART” is the industry’s first comprehensive delivery, payment and returns solution available for e-tailers around the world selling to shoppers in Aramex’s core markets 
+                        </div>
+                        <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                            <span class="text">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 top-buffer equal">
+                <div class="article--wrapper">
 
-                  <span class="panel-bar"></span>
-                  <h2 >Manage Shipments</h2>
-                  <p class="subheader"> Competitive shipping rates designed for your needs</p>
-              </div>
+                    <div class="bg-white ">
+                        <div class="content--header ">
+                            <span class="panel-bar"></span>
+                            <div class="panel-title">Latest News</div>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item">
+                                    <small>03 Sep 2020</small>
+                                    <h3 class="article-title">A notice regarding cash dividends not received by the shareholders of the local listed public joint stock companies and held with companies prior to 1st March 2015</h3>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <small>05 Aug 2020</small>
+                                    <h3 class="article-title">Aramex Revenues Increases 4% to AED 1,332 million in Q2 2020</h3>
+                                </a>
+                                <a href="#" class="list-group-item">
+                                    <small>29 Jul 2020</small>
+                                    <h3 class="article-title">Aramex Ranks First at “S&amp;P/Hawkamah UAE ESG Index”</h3>
+                                </a>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-red text-white btn-lg my-2 ">See All News</button>
+                    </div>   
+                </div>
 
+            </div>
+            <div class="col-md-6 top-buffer equal">
+                <div class="article--wrapper">
 
-          </div>
+                    <div class="bg-white ">
+    
+                        <img src="https://dotcomaramexprod.blob.core.windows.net/default/images/default-source/press-releases/updates-related-to-covid-19006e7a88b3f2659d9310ff0100e7fe0c.png" class="img-fluid">
+                        <div class="content--header top-buffer">
+                            <span class="panel-bar"></span>
+                            <div class="panel-title">News</div>
+                            <h2 class="header">
+                                Service Updates Related to COVID-19
+                            </h2>
+                        </div>
+                        <div class="desc" data-lines="3" style="overflow: hidden; text-overflow: ellipsis; -webkit-box-orient: vertical; display: -webkit-box; -webkit-line-clamp: 3;">
+                            We are closely monitoring the situation during the COVID-19 outbreak, learn more details on the latest service updates. Stay Safe!
+                        </div>
+                        <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                            <span class="text">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
+    </div>
+    <!-- the app part -------------------------------------------------------->
+    <div class="container  top-buffer">
+        <div class="row text-center ">
+            <div class="col-md-4">
+                <div class="card bg-white content--header app--height">
+                    <div class="container card-body">
 
+                        <div class="row ">
+                            <div class="icon">
+                                <i class="fas fa-dolly"></i>
+                            </div>
+                        </div>
+                        <h2 class="header">
+                            Catering for Storage of Dangerous Goods
+                        </h2>
+                        <div class="desc"  data-lines="3">
+                            Warehousing is an integral part of our business and wider supply chain. We, at Aramex, therefore decided to propose a separate state-of-the-art facility for Dangerous Goods (HazMat) storage i...</div>
+                    </div>
+                    <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                        <span class="text">Learn More</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-white content--header app--height">
+                    <div class="container card-body">
+
+                        <div class="row ">
+                            <div class="icon">
+                            <i class="fab fa-app-store-ios"></i>
+                            </div>
+                        </div>
+                        <h2 class="header">
+                            Aramex App
+                        </h2>
+                        <div class="desc"  data-lines="3">
+                            The Aramex App allows all Aramex customers around the world to track delivery, monitor shipment progress and manage their account, addresses and delivery details
+                        ...</div>
+                    </div>
+                    <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                        <span class="text">Learn More</span>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-white content--header app--height">
+                    <div class="container card-body">
+                        <div class="row ">
+                            <div class="icon">
+                                <i class="fas fa-dolly"></i>
+                            </div>
+                        </div>
+                        <h2 class="header">
+                            New Zealand Goods And Services Tax Law Changes
+                        </h2>
+                        <div class="desc" data-lines="3">
+                            This is an update&nbsp;regarding various legislative reforms to the New Zealand Goods and Services Tax (GST) treatment of low value goods (NZD $1,000 and under) sold to New Zealand based c...
+                        </div>
+                    </div>
+                    <a class="card-footer btn btn-default align-self-end w-100 " href="#">
+                        <span class="text">Learn More</span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<!-- footer -->
+<div class="amx-sn-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="amx-footer-link-group amx-small-block-4-4 ">
+
+                    <h5 class="amx-footer-header">
+                        <a>Developers Center</a><span class="divider"></span>
+                    </h5>
+                    <ul class="amx-footer-links">
+                        <li>
+                        <a class="amx-footer-link" href="/developers-center/aramex-clicktoship">Aramex ClickToShip</a>
+                        </li>
+                        <li>
+                        <a class="amx-footer-link" href="/developers-center/apis">Aramex APIs</a>
+                        </li>
+                        <li>
+                        <a class="amx-footer-link" href="/developers-center/forum">Developers Forum</a>
+                        </li>
+                        <li>
+                        <a class="amx-footer-link" href="/developers-center/ecommerce-platform">E-commerce Platforms</a>
+                        </li>
+        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="amx-footer-link-group amx-small-block-4-4 ">
+                    <h5 class="amx-footer-header">
+                        
+                        <a>About</a><span class="divider"></span>
+                    </h5>
+                    <ul class="amx-footer-links">
+                                <li>
+                    <a class="amx-footer-link" href="/about-details/about-aramex">About Aramex</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/about-details/investor-relations">Investor Relations</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/about-details/delivering-good/overview">Delivering Good</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/about-details/how-to-apply">Franchise</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/about-details/certifications">Certifications</a>
+                    </li>
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="amx-footer-link-group amx-small-block-4-4 ">
+                    <h5 class="amx-footer-header">
+                        
+                        <a>Legal</a><span class="divider"></span>
+                    </h5>
+                    <ul class="amx-footer-links">
+                                <li>
+                    <a class="amx-footer-link" href="/terms-of-use.html">Terms of Use</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/fraud-prevention.html">Fraud Prevention</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/privacy-policy.html">Privacy Policy</a>
+                    </li>
+    
+                    </ul>
+                    </div>
+
+            </div>
+            <div class="col-md-2">
+                <div class="amx-footer-link-group amx-small-block-4-4 ">
+                    <h5 class="amx-footer-header">
+                        
+                        <a>Connect</a><span class="divider"></span>
+                    </h5>
+                    <ul class="amx-footer-links">
+                                <li>
+                    <a class="amx-footer-link" href="/connect/customer-support">Customer Support</a>
+                    </li>
+                    <li>
+                    <a class="amx-footer-link" href="/connect/careers">Careers</a>
+                    </li>
+    
+                    </ul>
+                </div>
+            </div>
+
+            
+
+
+
+            <div class="col-md-2 ml-auto">
+                <!-- <form action="/home/GetSearchResult/" method="post" class="ng-pristine ng-valid">                       
+                    <input id="search" class="foter-search" name="txtSearch" type="search" placeholder="Search">
+                    <button type="submit" class="fas fa-search amx-cp-btn amx-cp-btn-search "></button>
+                    <button type="reset" class="amx-i-cross  amx-cp-btn amx-cp-btn-clear" style="display: none;"></button>
+                </form> -->
+
+                <ul class="amx-md-social-links">
+                    <li class="amx-social-item"><a href="https://www.facebook.com/Aramex/" class="amx-fb"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="amx-social-item"><a href="https://twitter.com/aramex" class="amx-twtr"><i class="fab fa-twitter"></i></a></li>
+                    <li class="amx-social-item"><a href="https://www.instagram.com/aramex/" class="amx-ig"><i class="fab fa-instagram"></i></a></li>
+                    <li class="amx-social-item"><a href="https://www.linkedin.com/company/aramex" class="amx-ln"><i class="fab fa-linkedin"></i></a></li>
+                    <li class="amx-social-item"><a href="https://www.youtube.com/user/AramexTV" class="amx-yt"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+                <br>
+                <span class="amx-cp-copy">© Aramex 2020. All rights reserved.</span>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
 
 
@@ -443,5 +791,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+    <script src=""></script>
+    <script>
+        
+    </script>
 </body>
 </html>
